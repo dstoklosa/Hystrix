@@ -27,3 +27,7 @@ and for Ivy:
 Example usage (make it work/plug it in):
 
       HystrixPlugins.getInstance().registerMetricsPublisher(new HystrixCodahaleMetricsPublisher(yourMetricRegistry));
+
+One can also specify root node for your metrics:
+
+      HystrixPlugins.getInstance().registerMetricsPublisher(new HystrixCodahaleMetricsPublisher(metricsRootNode, yourMetricRegistry));
